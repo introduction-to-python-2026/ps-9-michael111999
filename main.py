@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
+import joblib
 
 df = pd.read_csv('/content/parkinsons.csv')
 display(df.head())
@@ -45,3 +46,4 @@ if accuracy >= 0.8:
     print("Accuracy requirement met!")
 else:
     print("Accuracy is below 0.8. Consider further model tuning or feature engineering.")
+joblib.dump(model, 'my_model.joblib')
