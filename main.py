@@ -17,7 +17,7 @@ display(X.head())
 print("\nOutput feature (y) head:")
 display(y.head())
 
-
+ 
 
 print("Scaled Input features (X_scaled) head:")
 display(X_scaled.head())
